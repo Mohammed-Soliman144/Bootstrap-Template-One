@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap-Template-One</title>
+    <!-- Icon of WebSite -->
+    <link rel="icon" href="assets/img/bootstrap.ico" type="image/x-icon" />
+    <!-- Icon For Apple Devices -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/img/bootstrap.ico"
+    />
+    <!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <!-- Main CSS External Stylesheet File -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Metamorphous&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- =============================== Header ================================================= -->
+    <header class="main-header fixed-top" id="main-header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary py-3" id="navbar">
+        <div class="container">
+          <a
+            href="#"
+            class="navbar-brand fw-bold fs-3 text-primary"
+            tabindex="-1"
+            >Microdata</a
+          >
+          <button
+            class="navbar-toggler"
+            data-bs-target="#collapse"
+            data-bs-toggle="collapse"
+            aria-label="navbar button"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapse">
+            <ul class="navbar-nav ms-auto fs-5 text-secondary header-main-ul">
+              <li class="nav-item align-self-md-center me-lg-2">
+                <a href="#home" class="nav-link active" aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item align-self-md-center me-lg-2">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item align-self-md-center me-lg-2">
+                <a href="#services" class="nav-link">Services</a>
+              </li>
+              <li class="nav-item dropdown align-self-md-center me-lg-4">
+                <a
+                  href="#products"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Products</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#product1" class="dropdown-item">Product1</a>
+                  </li>
+                  <li>
+                    <a href="#product2" class="dropdown-item">Product2</a>
+                  </li>
+                  <li>
+                    <a href="#product3" class="dropdown-item">Product3</a>
+                  </li>
+                  <li>
+                    <a href="#product4" class="dropdown-item">Product4</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item align-self-md-center me-lg-2">
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+              </li>
+              <li class="nav-item align-self-md-center">
+                <a href="#contact" class="nav-link">contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- =============================== Header ================================================= -->
+    <!-- =============================== Main =================================================== -->
+    <main>
+      <!-- ============================== Home ================================================= -->
+      <section class="home position-relative" id="home">
+        <img
+          src="assets/img/hero-bg.jpg"
+          alt="Hero Image"
+          class="d-block w-100 opacity-50 home-img"
+        />
+        <article
+          class="container position-absolute top-50 start-50 translate-middle z-1"
+        >
+          <h1 class="text-capitalize">
+            Welcome to <span class="text-primary">microdata</span>
+          </h1>
+          <p class="lead display-6 text-secondary pt-3 pb-4">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <div class="btn-group">
+            <button class="btn btn-primary btn-lg me-3" type="button">
+              Get Started
+            </button>
+            <button
+              class="btn btn-outline-primary btn-lg"
+              type="button"
+              id="modalBtn"
+            >
+              <i class="fa-solid fa-play-circle pe-5"></i>Watch Video
+            </button>
+          </div>
+        </article>
+      </section>
+      <section
+        class="modal fade"
+        id="videoModal"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        aria-labelledby="modelTitle"
+        tabindex="-1"
+      >
+        <div
+          class="modal-dialog modal-fullscreen modal-dialog-scrollable modal-dialog-centered"
+        >
+          <article class="modal-content">
+            <header class="modal-header">
+              <h2 class="modal-title text-primary" id="modelTitle">
+                Microdata
+              </h2>
+              <button
+                class="btn-close"
+                type="button"
+                aria-label="close"
+                data-bs-dismiss="modal"
+              ></button>
+            </header>
+            <article class="modal-body">
+              <h3 class="text-capitalize pb-2 text-center">
+                bootstrap Completed Course
+              </h3>
+              <div class="ratio ratio-16x9">
+                <iframe
+                  src="https://www.youtube.com/embed/EzHbZjXDdKc?si=4XZhoWP_g0-_g1ZZ&amp;start=1"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="fs-4 text-dark text-capitalize pt-2 text-center">
+                this video contains main fields of bootstrap such as layout -
+                utilities classes - components - form
+              </p>
+            </article>
+            <footer class="modal-footer">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </footer>
+          </article>
+        </div>
+      </section>
+      <!-- ============================== Home ================================================= -->
+      <!-- ============================== About ================================================ -->
+      <section class="about container-fluid pt-5 section-bgc" id="about">
+        <section class="container">
+          <div class="row">
+            <header class="col-12 text-center">
+              <span
+                class="badge bg-primary-subtle text-primary rounded-pill px-4 fs-5 fw-lighter mt-3 text-uppercase"
+              >
+                about
+              </span>
+            </header>
+            <article class="col-12 text-center my-4">
+              <h2>
+                Find Out More
+                <span class="text-primary">About Us</span>
+              </h2>
+              <p class="fs-5">
+                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+                adipisci expedita at voluptas atque vitae autem.
+              </p>
+            </article>
+
+            <article
+              class="col-12 col-lg-6 offset-lg-6 animated-on-scroll"
+              data-animation-type="fade-in-article"
+            >
+              <h3>
+                Voluptatem dignissimos provident quasi corporis voluptates sit
+                assumenda.
+              </h3>
+              <p class="fs-5 py-2 fw-light">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+            </article>
+            <article
+              class="col-12 col-lg-6 offset-lg-6 my-3 animated-on-scroll"
+              data-animation-type="fade-in-article"
+            >
+              <div class="row flex-nowrap align-items-start">
+                <div
+                  class="col-1 rounded-circle bg-white d-flex justify-content-center align-items-center shadow icon-circle"
+                >
+                  <i class="fa-solid fa-book-open fa-2xl text-primary"></i>
+                </div>
+                <div class="col">
+                  <h4>Ullamco laboris nisi ut aliquip consequat</h4>
+                  <p class="fs-6">
+                    Magni facilis facilis repellendus cum excepturi quaerat
+                    praesentium libre trade
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article
+              class="col-12 col-lg-6 offset-lg-6 my-3 animated-on-scroll"
+              data-animation-type="fade-in-article"
+            >
+              <div class="row flex-nowrap align-items-start">
+                <div
+                  class="col-1 rounded-circle bg-white d-flex justify-content-center align-items-center shadow icon-circle"
+                >
+                  <i class="fa-solid fa-book-open fa-2xl text-primary"></i>
+                </div>
+                <div class="col">
+                  <h4>Ullamco laboris nisi ut aliquip consequat</h4>
+                  <p class="fs-6">
+                    Magni facilis facilis repellendus cum excepturi quaerat
+                    praesentium libre trade
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="section-bgc-white pb-5">
+          <article class="container">
+            <div class="row gx-5 pt-5">
+              <div class="col-12 col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="d-flex justify-content-between mt-3 p-1">
+                      <strong class="fs-6 fw-bold text-uppercase">html</strong>
+                      <span
+                        class="fs-6 fw-bold animated-on-scroll"
+                        data-target="40%"
+                        data-animation-type="animated-number"
+                        >40%</span
+                      >
+                    </div>
+                    <div
+                      class="progress mb-3 position-relative"
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      role="progressbar"
+                      id="htmlSkill"
+                      aria-label="html Skill Progress"
+                    >
+                      <div
+                        class="progress-bar-striped bg-primary myprogress-40 animated-on-scroll"
+                        data-animation-type="animated-progress"
+                        data-target="40%"
+                        id="htmlValue"
+                      ></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between mt-3 p-1">
+                      <strong class="fs-6 fw-bold text-uppercase"
+                        >javascript</strong
+                      >
+                      <span
+                        class="fs-6 fw-bold animated-on-scroll"
+                        data-target="60%"
+                        data-animation-type="animated-number"
+                        >60%</span
+                      >
+                    </div>
+                    <div
+                      class="progress mb-3 position-relative"
+                      aria-valuenow="60"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      role="progressbar"
+                      id="jsSkill"
+                      aria-label="Javascript Skill Progress"
+                    >
+                      <div
+                        class="progress-bar-striped bg-primary myprogress-60 animated-on-scroll"
+                        data-animation-type="animated-progress"
+                        data-target="60%"
+                        id="jsValue"
+                      ></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between mt-3 p-1">
+                      <strong class="fs-6 fw-bold text-uppercase"
+                        >wordpress</strong
+                      >
+                      <span
+                        class="fs-6 fw-bold animated-on-scroll"
+                        data-target="80%"
+                        data-animation-type="animated-number"
+                        >80%</span
+                      >
+                    </div>
+                    <div
+                      class="progress mb-3 position-relative"
+                      aria-valuenow="80"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      role="progressbar"
+                      id="wpSkill"
+                      aria-label="Wordpress Skill Progress"
+                    >
+                      <div
+                        class="progress-bar-striped bg-primary myprogress-80 animated-on-scroll"
+                        data-animation-type="animated-progress"
+                        data-target="80%"
+                        id="wpValue"
+                      ></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-lg-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="d-flex justify-content-between mt-3 p-1">
+                      <strong class="fs-6 fw-bold text-uppercase">css</strong>
+                      <span
+                        class="fs-6 fw-bold animated-on-scroll"
+                        data-target="50%"
+                        data-animation-type="animated-number"
+                        >50%</span
+                      >
+                    </div>
+                    <div
+                      class="progress mb-3 position-relative"
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      role="progressbar"
+                      id="cssSkill"
+                      aria-label="CSS Skill Progress"
+                    >
+                      <div
+                        class="progress-bar-striped bg-primary myprogress-50 animated-on-scroll"
+                        data-animation-type="animated-progress"
+                        data-target="50%"
+                        id="csslValue"
+                      ></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between mt-3 p-1">
+                      <strong class="fs-6 fw-bold text-uppercase"
+                        >photoshop</strong
+                      >
+                      <span
+                        class="fs-6 fw-bold animated-on-scroll"
+                        data-target="70%"
+                        data-animation-type="animated-number"
+                        >70%</span
+                      >
+                    </div>
+                    <div
+                      class="progress mb-3 position-relative"
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      role="progressbar"
+                      id="psSkill"
+                      aria-label="photoshop Skill Progress"
+                    >
+                      <div
+                        class="progress-bar-striped bg-primary myprogress-70 animated-on-scroll"
+                        data-animation-type="animated-progress"
+                        data-target="70%"
+                        id="psValue"
+                      ></div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="d-flex justify-content-between mt-3 p-1">
+                      <strong class="fs-6 fw-bold text-uppercase">php</strong>
+                      <span
+                        class="fs-6 fw-bold animated-on-scroll"
+                        data-target="90%"
+                        data-animation-type="animated-number"
+                        >90%</span
+                      >
+                    </div>
+                    <div
+                      class="progress mb-3 position-relative"
+                      aria-valuenow="90"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      role="progressbar"
+                      id="phpSkill"
+                      aria-label="php Skill Progress"
+                    >
+                      <div
+                        class="progress-bar-striped bg-primary myprogress-90 animated-on-scroll"
+                        data-animation-type="animated-progress"
+                        data-target="90%"
+                        id="phpValue"
+                      ></div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <section class="row justify-content-between pt-5">
+              <article
+                class="col-12 col-lg-auto d-flex flex-wrap justify-content-center text-center position-relative px-5 my-4 section-bgc"
+              >
+                <div
+                  class="rounded-circle bg-primary-subtle p-3 position-absolute start-50 translate-middle"
+                >
+                  <i class="fa-solid fa-smile fa-2xl text-primary"></i>
+                </div>
+                <h6
+                  class="w-100 fs-4 h6 pt-5 animated-on-scroll"
+                  data-animation-type="animated-number"
+                  data-target="110"
+                >
+                  110
+                </h6>
+                <p class="w-100 fs-4 h6">Happy Clients</p>
+              </article>
+              <article
+                class="col-12 col-lg-auto d-flex flex-wrap justify-content-center text-center position-relative px-5 my-4 section-bgc"
+              >
+                <div
+                  class="rounded-circle bg-primary-subtle p-3 position-absolute start-50 translate-middle"
+                >
+                  <i class="fa-solid fa-address-book fa-2xl text-primary"></i>
+                </div>
+                <h6
+                  class="w-100 fs-4 h6 pt-5 animated-on-scroll"
+                  data-animation-type="animated-number"
+                  data-target="120"
+                >
+                  120
+                </h6>
+                <p class="w-100 fs-4 h6">Projects</p>
+              </article>
+              <article
+                class="col-12 col-lg-auto d-flex flex-wrap justify-content-center text-center position-relative px-5 my-4 section-bgc"
+              >
+                <div
+                  class="rounded-circle bg-primary-subtle p-3 position-absolute start-50 translate-middle"
+                >
+                  <i class="fa-solid fa-headphones fa-2xl text-primary"></i>
+                </div>
+                <!-- in statistics number is more importance for this section so could use h6 as heading but other description content use p -->
+                <h6
+                  class="w-100 fs-4 h6 pt-5 animated-on-scroll"
+                  data-animation-type="animated-number"
+                  data-target="24"
+                >
+                  24
+                </h6>
+                <p class="w-100 fs-4 h6">Hours Of Support</p>
+              </article>
+              <article
+                class="col-12 col-lg-auto d-flex flex-wrap justify-content-center text-center position-relative px-5 mt-4 mb-5 section-bgc"
+              >
+                <div
+                  class="rounded-circle bg-primary-subtle p-3 position-absolute start-50 translate-middle"
+                >
+                  <i class="fa-solid fa-users fa-2xl text-primary"></i>
+                </div>
+                <h6
+                  class="w-100 fs-4 h6 pt-5 animated-on-scroll"
+                  data-animation-type="animated-number"
+                  data-target="15"
+                >
+                  15
+                </h6>
+                <p class="w-100 fs-4 h6">Hard Workers</p>
+              </article>
+            </section>
+          </article>
+        </section>
+        <section class="my-5 section-bgc py-5">
+          <article class="container">
+            <div class="row">
+              <div
+                class="col-6 col-lg-2 animated-on-scroll"
+                data-animation-type="fade-up"
+              >
+                <img
+                  src="assets/img/client-1.png"
+                  alt="Responsive Image"
+                  class="d-block w-100"
+                />
+              </div>
+              <div
+                class="col-6 col-lg-2 animated-on-scroll"
+                data-animation-type="fade-up"
+              >
+                <img
+                  src="assets/img/client-2.png"
+                  alt="Responsive Image"
+                  class="d-block w-100"
+                />
+              </div>
+              <div
+                class="col-6 col-lg-2 animated-on-scroll"
+                data-animation-type="fade-up"
+              >
+                <img
+                  src="assets/img/client-3.png"
+                  alt="Responsive Image"
+                  class="d-block w-100"
+                />
+              </div>
+              <div
+                class="col-6 col-lg-2 animated-on-scroll"
+                data-animation-type="fade-up"
+              >
+                <img
+                  src="assets/img/client-4.png"
+                  alt="Responsive Image"
+                  class="d-block w-100"
+                />
+              </div>
+              <div
+                class="col-6 col-lg-2 animated-on-scroll"
+                data-animation-type="fade-up"
+              >
+                <img
+                  src="assets/img/client-5.png"
+                  alt="Responsive Image"
+                  class="d-block w-100"
+                />
+              </div>
+              <div
+                class="col-6 col-lg-2 animated-on-scroll"
+                data-animation-type="fade-up"
+              >
+                <img
+                  src="assets/img/client-6.png"
+                  alt="Responsive Image"
+                  class="d-block w-100"
+                />
+              </div>
+            </div>
+          </article>
+        </section>
+      </section>
+      <!-- About -->
+      <!-- Service -->
+      <section
+        class="services container-fluid py-5 position-relative"
+        id="services"
+      >
+        <div class="container">
+          <header class="row">
+            <div class="col-12 text-center">
+              <span
+                class="badge bg-primary-subtle text-primary rounded-pill px-4 fs-5 fw-lighter mt-3 text-uppercase"
+              >
+                services
+              </span>
+            </div>
+            <div class="col-12 text-center my-4">
+              <h2>
+                Check Our
+                <span class="text-primary">Services</span>
+              </h2>
+              <p class="fs-5">
+                Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+                adipisci expedita at voluptas atque vitae autem.
+              </p>
+            </div>
+          </header>
+          <div class="row mb-5">
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+              <article
+                class="card border-1 border-light rounded-0 shadow-lg py-5 px-2"
+                data-animation-type="fade-in-scroll"
+              >
+                <header class="card-img">
+                  <i class="fa-solid fa-bank fa-2xl w-100"></i>
+                </header>
+                <footer class="card-body">
+                  <h3 class="card-title py-2">Lorem, ipsum dolor.</h3>
+                  <p class="fs-5 fw-light pt-3">
+                    Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi
+                  </p>
+                </footer>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+              <article
+                class="card border-1 border-light rounded-0 shadow-lg py-5 px-2"
+                data-animation-type="fade-in-scroll"
+              >
+                <header class="card-img">
+                  <i class="fa-solid fa-bank fa-2xl w-100"></i>
+                </header>
+                <footer class="card-body">
+                  <h3 class="card-title py-2">Lorem, ipsum dolor.</h3>
+                  <p class="fs-5 fw-light pt-3">
+                    Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi
+                  </p>
+                </footer>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+              <article
+                class="card border-1 border-light rounded-0 shadow-lg py-5 px-2"
+                data-animation-type="fade-in-scroll"
+              >
+                <header class="card-img">
+                  <i class="fa-solid fa-bank fa-2xl w-100"></i>
+                </header>
+                <footer class="card-body">
+                  <h3 class="card-title py-2">Lorem, ipsum dolor.</h3>
+                  <p class="fs-5 fw-light pt-3">
+                    Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi
+                  </p>
+                </footer>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 my-3">
+              <article
+                class="card border-1 border-light rounded-0 shadow-lg py-5 px-2"
+                data-animation-type="fade-in-scroll"
+              >
+                <header class="card-img">
+                  <i class="fa-solid fa-bank fa-2xl w-100"></i>
+                </header>
+                <footer class="card-body">
+                  <h3 class="card-title py-2">Lorem, ipsum dolor.</h3>
+                  <p class="fs-5 fw-light pt-3">
+                    Voluptatum deleniti atque corrupti quos dolores et quas
+                    molestias excepturi
+                  </p>
+                </footer>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <div class="overlay mb-5">
+          <img
+            src="assets/img/testimonials-bg.jpg"
+            alt="Responsive Image"
+            class="d-block w-100 position-absolute start-0 z-n1 h-100"
+          />
+          <!-- Article Images -->
+          <div class="container">
+            <div class="row align-items-end">
+              <article
+                class="carousel slide"
+                id="carousel"
+                data-bs-ride="carousel"
+              >
+                <header class="carousel-indicators">
+                  <button
+                    class="active"
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="0"
+                    aria-label="slide1"
+                    aria-current="true"
+                  ></button
+                  ><button
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="1"
+                    aria-label="slide2"
+                  ></button
+                  ><button
+                    data-bs-target="#carousel"
+                    data-bs-slide-to="2"
+                    aria-label="slide3"
+                  ></button>
+                </header>
+                <div class="carousel-inner">
+                  <!-- Must be added class active for one of carousel-item to work -->
+                  <article class="carousel-item active" data-bs-interval="1000">
+                    <img
+                      src="assets/img/testimonials-1.jpg"
+                      alt="Image1"
+                      class="rounded-circle d-block"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Slide Header Image 01</h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ea dolores beatae blanditiis saepe alias accusamus?
+                      </p>
+                    </div>
+                  </article>
+                  <article class="carousel-item" data-bs-interval="2000">
+                    <img
+                      src="assets/img/testimonials-2.jpg"
+                      alt="Image2"
+                      class="rounded-circle d-block text-center"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Slide Header Image 02</h5>
+                      <p>
+                        Accusamus obcaecati laborum doloremque aspernatur! Culpa
+                        tenetur nobis autem, unde provident voluptates ratione
+                        id necessitatibus!
+                      </p>
+                    </div>
+                  </article>
+                  <article class="carousel-item" data-bs-interval="3000">
+                    <img
+                      src="assets/img/testimonials-3.jpg"
+                      alt="Image3"
+                      class="rounded-circle d-block"
+                    />
+                    <div class="carousel-caption">
+                      <h5>Slide Header Image 03</h5>
+                      <p>
+                        Impedit optio quia minus quam modi sequi asperiores quod
+                        molestiae vero velit! Placeat, suscipit veniam!
+                      </p>
+                    </div>
+                  </article>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  data-bs-target="#carousel"
+                  data-bs-slide="prev"
+                  aria-label="Previous"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  data-bs-target="#carousel"
+                  data-bs-slide="next"
+                  aria-label="Next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </article>
+            </div>
+          </div>
+        </div>
+        <!-- Article Images -->
+      </section>
+      <!-- Service -->
+      <!-- Portofolio -->
+      <section class="portfolio container" id="portfolio">
+        <header class="row">
+          <div class="col-12 text-center">
+            <span
+              class="badge bg-primary-subtle text-primary rounded-pill px-4 fs-5 fw-lighter mt-3 text-uppercase"
+            >
+              portfolio
+            </span>
+          </div>
+          <div class="col-12 text-center my-4">
+            <h2 class="text-capitalize">
+              check our
+              <span class="text-primary">portfolio</span>
+            </h2>
+            <p class="fs-5">
+              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+              adipisci expedita at voluptas atque vitae autem.
+            </p>
+          </div>
+        </header>
+        <article class="row gy-5 gx-0 justify-content-center">
+          <ul class="btn-group col-auto">
+            <li class="btn btn-outline-primary active" aria-current="true">
+              All
+            </li>
+            <li class="btn btn-outline-primary">App</li>
+            <li class="btn btn-outline-primary">Photo</li>
+            <li class="btn btn-outline-primary">Web</li>
+          </ul>
+          <div class="row gx-0 gap-4 m-0 justify-content-center">
+            <figure
+              class="col-auto col-md-5 col-xl-3 p-2 bg-white shadow d-flex justify-content-center align-items-center"
+              data-animation-type="fade-in-up"
+            >
+              <a href="#"
+                ><img
+                  class="img-width w-100"
+                  src="assets/img/portfolio-1.jpg"
+                  loading="lazy"
+                  alt="Image 01"
+              /></a>
+            </figure>
+            <figure
+              class="col-auto col-md-5 col-xl-3 p-2 bg-white shadow d-flex justify-content-center align-items-center"
+              data-animation-type="fade-in-up"
+            >
+              <a href="#"
+                ><img
+                  class="img-width w-100"
+                  src="assets/img/portfolio-2.jpg"
+                  loading="lazy"
+                  alt="Image 02"
+              /></a>
+            </figure>
+            <figure
+              class="col-auto col-md-5 col-xl-3 p-2 bg-white shadow d-flex justify-content-center align-items-center"
+              data-animation-type="fade-in-up"
+            >
+              <a href="#">
+                <img
+                  class="img-width w-100"
+                  src="assets/img/portfolio-3.jpg"
+                  loading="lazy"
+                  alt="Image 03"
+                />
+              </a>
+            </figure>
+            <figure
+              class="col-auto col-md-5 col-xl-3 p-2 bg-white shadow d-flex justify-content-center align-items-center"
+              data-animation-type="fade-in-up"
+            >
+              <a href="#">
+                <img
+                  class="img-width w-100"
+                  src="assets/img/portfolio-4.jpg"
+                  loading="lazy"
+                  alt="Image 04"
+                />
+              </a>
+            </figure>
+            <figure
+              class="col-auto col-md-5 col-xl-3 p-2 bg-white shadow d-flex justify-content-center align-items-center"
+              data-animation-type="fade-in-up"
+            >
+              <a href="#">
+                <img
+                  class="img-width w-100"
+                  src="assets/img/portfolio-5.jpg"
+                  loading="lazy"
+                  alt="Image 05"
+                />
+              </a>
+            </figure>
+            <figure
+              class="col-auto col-md-5 col-xl-3 p-2 bg-white shadow d-flex justify-content-center align-items-center"
+              data-animation-type="fade-in-up"
+            >
+              <a href="#"
+                ><img
+                  class="img-width w-100"
+                  src="assets/img/portfolio-6.jpg"
+                  loading="lazy"
+                  alt="Image 06"
+              /></a>
+            </figure>
+          </div>
+        </article>
+      </section>
+      <section
+        class="mycarousel"
+        id="mycarousel"
+        data-animation-type="fade-fill"
+      >
+        <header class="carousel-header">
+          <p>10</p>
+          <a href="#" role="button"
+            ><i class="fa-solid fa-download fa-xl"></i
+          ></a>
+          <button type="button" aria-label="close">
+            <i class="fa-solid fa-close fa-xl"></i>
+          </button>
+        </header>
+        <div class="carousel-container">
+          <figure>
+            <img
+              src="assets/img/portfolio-1.jpg"
+              class="active"
+              aria-current="true"
+              alt="image"
+            />
+            <img src="assets/img/portfolio-2.jpg" alt="image" />
+            <img src="assets/img/portfolio-3.jpg" alt="image" />
+            <img src="assets/img/portfolio-4.jpg" alt="image" />
+            <img src="assets/img/portfolio-5.jpg" alt="image" />
+            <img src="assets/img/portfolio-6.jpg" alt="image" />
+          </figure>
+        </div>
+        <button type="button" aria-label="previous">
+          <i class="fa-solid fa-angle-left fa-xl"></i>
+        </button>
+        <button type="button" aria-label="next">
+          <i class="fa-solid fa-angle-right fa-xl"></i>
+        </button>
+      </section>
+      <!-- Portofolio -->
+      <!-- Contact Us -->
+      <section class="contact container py-5" id="contact">
+        <header class="row">
+          <div class="col-12 text-center">
+            <span
+              class="badge bg-primary-subtle text-primary rounded-pill px-4 fs-5 fw-lighter mt-3 text-uppercase"
+            >
+              Contact us
+            </span>
+          </div>
+          <div class="col-12 text-center my-4">
+            <h2 class="text-capitalize">
+              check our
+              <span class="text-primary">contact us</span>
+            </h2>
+            <p class="fs-5">
+              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
+              adipisci expedita at voluptas atque vitae autem.
+            </p>
+          </div>
+        </header>
+        <div class="row gap-3 justify-content-center cards">
+          <article
+            class="card col-auto d-flex align-items-center justify-content-center shadow border-0 rounded-0"
+            data-animation-type="fade-in-left"
+          >
+            <div class="card-img-top text-center mt-4">
+              <i class="fa-solid fa-location fa-2xl text-primary"></i>
+            </div>
+            <div class="card-body fs-5 text-secondary text-center">
+              <h5 class="card-title fw-bold">Our Address</h5>
+              <p class="card-text fw-normal">
+                A108 Adam Street, New York, NY 535022
+              </p>
+            </div>
+          </article>
+          <article
+            class="card col-auto d-flex align-items-center justify-content-center shadow border-0 rounded-0"
+            data-animation-type="fade-in-left"
+          >
+            <div class="card-img-top text-center mt-4">
+              <i class="fa-solid fa-envelope fa-2xl text-primary"></i>
+            </div>
+            <div class="card-body fs-5 text-secondary text-center">
+              <h5 class="card-title fw-bold">Email Us</h5>
+              <p class="card-text fw-normal">contact@example.com</p>
+            </div>
+          </article>
+          <article
+            class="card col-auto d-flex align-items-center justify-content-center shadow border-0 rounded-0"
+            data-animation-type="fade-in-left"
+          >
+            <div class="card-img-top text-center mt-4">
+              <i class="fa-solid fa-phone fa-2xl text-primary"></i>
+            </div>
+            <div class="card-body fs-5 text-secondary text-center">
+              <h5 class="card-title fw-bold">Call Us</h5>
+              <p class="card-text fw-normal">+1 5589 55488 55</p>
+            </div>
+          </article>
+        </div>
+        <div class="row g-3 gy-3 mt-3 justify-content-between">
+          <div
+            class="col-lg-12 col-xl-6 p-3 border border-white shadow d-flex align-items-center left"
+            data-animation-type="fade-in-right"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55259.075683505995!2d31.2282952!3d30.045686299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840ac90c2ed63%3A0x2fdb96e4e9f72e6f!2sSaladin%20Citadel!5e0!3m2!1sen!2seg!4v1763659466453!5m2!1sen!2seg"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Google Map Showing Our Location"
+              class="ele-in-visible"
+            ></iframe>
+            <img
+              class="ele-visible"
+              src="assets/img/map.png"
+              alt="Map Image- Location"
+              title="Location"
+            />
+          </div>
+          <form
+            action=""
+            method="get"
+            class="col-lg-12 col-xl-6 p-3 border border-white shadow needs-validation right"
+            data-animation-type="fade-in-right"
+            novalidate
+          >
+            <!--  width="400" height="300"  -->
+            <div class="row gy-3">
+              <div class="col-6">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                  required
+                />
+                <div class="invalid-feedback">
+                  This is Field must be Filled.
+                </div>
+              </div>
+              <div class="col-6">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                  required
+                />
+                <div class="invalid-feedback">
+                  This is Field must be Filled.
+                </div>
+              </div>
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Subject"
+                  required
+                />
+                <div class="invalid-feedback">
+                  This is Field must be Filled.
+                </div>
+              </div>
+              <div class="col-12">
+                <textarea
+                  placeholder="Message"
+                  class="form-control"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">
+                  This is Field must be Filled.
+                </div>
+              </div>
+            </div>
+            <button class="col-3 mt-3 btn btn-primary" type="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Contact Us -->
+    </main>
+    <!-- Main -->
+    <!-- Footer -->
+    <footer class="main-footer py-5">
+      <section class="container">
+        <div class="row justify-content-between gy-md-0 gy-sm-3">
+          <article
+            class="col-sm-12 col-md-6 col-lg-4 text-sm-center text-md-start"
+          >
+            <h4 class="text-secondary text-uppercase">Microdata</h4>
+            <p class="fs-6 text-secondary">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              ipsum assumenda rem repellat similique corrupti
+            </p>
+            <p class="fs-6 text-secondary">
+              <span class="fw-bold">Email:</span>
+              info@example.com
+            </p>
+            <p class="fs-6 text-secondary">
+              <span class="fw-bold">Phone :</span>
+              +111 22 333 4444
+            </p>
+          </article>
+          <article class="col-sm-12 col-md-6 col-lg-2 text-sm-start mt-sm-1">
+            <h5 class="text-secondary text-capitalize">useful Links</h5>
+            <nav>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 01</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 02</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 03</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 04</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 05</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article class="col-sm-12 col-md-6 col-lg-2 text-sm-start mt-sm-1">
+            <h5 class="text-secondary text-capitalize">useful Links</h5>
+            <nav>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 01</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 02</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 03</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 04</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Link 05</a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+          <article
+            class="col-sm-12 col-md-6 col-lg-4 text-sm-center text-md-start mt-sm-1"
+          >
+            <h5 class="text-secondary ps-1">Our Social Networks</h5>
+            <p class="fs-6 fw-normal text-secondary ps-1">
+              Cras fermentum odio eu feugiat lide par naso tierra videa magna
+              derita valies
+            </p>
+            <nav>
+              <ul
+                class="nav list-inline flex-row justify-content-md-start justify-content-sm-center"
+              >
+                <li class="nav-item">
+                  <a href="#" class="nav-link p-1"
+                    ><i
+                      class="fa-brands fa-square-facebook fs-4 bg-primary text-white px-3 py-1 d-flex flex-row justify-content-center align-items-center rounded-1"
+                    ></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link p-1"
+                    ><i
+                      class="fa-brands fa-twitter fs-4 bg-primary text-white px-3 py-1 d-flex flex-row justify-content-center align-items-center rounded-1"
+                    ></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link p-1"
+                    ><i
+                      class="fa-brands fa-linkedin fs-4 bg-primary text-white px-3 py-1 d-flex flex-row justify-content-center align-items-center rounded-1"
+                    ></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link p-1"
+                    ><i
+                      class="fa-brands fa-instagram fs-4 bg-primary text-white px-3 py-1 d-flex flex-row justify-content-center align-items-center rounded-1"
+                    ></i
+                  ></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link p-1"
+                    ><i
+                      class="fa-brands fa-youtube fs-4 bg-primary text-white px-3 py-1 d-flex flex-row justify-content-center align-items-center rounded-1"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+          </article>
+        </div>
+      </section>
+    </footer>
+    <!-- Footer -->
+    <!-- bootstrap.bundle.min.js -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- app.js -->
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
