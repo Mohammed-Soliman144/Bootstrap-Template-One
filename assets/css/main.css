@@ -10,6 +10,7 @@ body {
 }
 
 /* F- Standard Media Queries */
+/* use it if your web site has many section animation to make browser decide plays or not plays animation according to user perferences */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0s;
@@ -308,6 +309,11 @@ main section.services div.container +  div.overlay > div.container .carousel-ite
   width: 150px;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+@media (max-width: 576px) {
+    main section.services div.container +  div.overlay > div.container .carousel-item img {
+    margin-bottom: 16.25vh;
+  }
 }
 /* Start Services */
 

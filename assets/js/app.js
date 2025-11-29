@@ -132,18 +132,19 @@ const aboutObserver = new IntersectionObserver(entries => {
         // to access value of this attribute
         const animationClass = targetElement.dataset.animationType;
         if(entry.isIntersecting) {
-            if(animationClass === 'fade-in-article' || animationClass === 'fade-up')
+            if(animationClass === 'fade-in-article' || animationClass === 'fade-up') 
                 targetElement.classList.add(animationClass);
-
             if(animationClass === 'animated-number') {
                 targetElement.classList.add(animationClass);
                 startCounting(targetElement);
             }
-
             if(animationClass === 'animated-progress') {
                 targetElement.classList.add(animationClass);
                 startProgressing(targetElement);
             }
+            // using unobserve(entry.target) inside check entry.isIntersecting
+            // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
+            aboutObserver.unobserve(entry.target);
         } else {
             if(animationClass !== 'fade-in-article' && animationClass !== 'fade-up') {
                 stopCounting(targetElement);
@@ -151,9 +152,6 @@ const aboutObserver = new IntersectionObserver(entries => {
             }
             targetElement.classList.remove(animationClass);
         }
-
-        // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
-        // aboutObserver.unobserve(entry.target);
     })
 },aboutOptions);
 
@@ -163,7 +161,8 @@ animatedElements.forEach(ele => {
 });
 
 
-const intervalMap = new Map();
+const counterMap = new Map();
+const progressMap = new Map();
 
 function startCounting(element) {
     let intervalId = null;
@@ -180,15 +179,15 @@ function startCounting(element) {
             else 
                 element.innerText = /%/.test(element.dataset.target) ?  `${counter}%` : counter;
         
-        intervalMap.set(element, intervalId);
+        counterMap.set(element, intervalId);
         }, 20);
 }
 
 
 function stopCounting(element) {
-    if(intervalMap.has(element)) {
-        clearInterval(intervalMap.get(element))
-        intervalMap.delete(element);
+    if(counterMap.has(element)) {
+        clearInterval(counterMap.get(element))
+        counterMap.delete(element);
     }
     element.innerText = element.innerText === "" ? "" : 0;
 }   
@@ -210,14 +209,14 @@ function startProgressing(element) {
         else 
             element.style.width = `${counter}%`;
 
-        intervalMap.set(element, intervalId);
+        progressMap.set(element, intervalId);
     })
 }
 
 function stopProgressing(element) {
-    if(intervalMap.has(element)){
-        clearInterval(intervalMap.get(element));
-        intervalMap.delete(element);
+    if(progressMap.has(element)){
+        clearInterval(progressMap.get(element));
+        progressMap.delete(element);
     }
     element.style.width = `${element.dataset.target}`;
 }
@@ -237,15 +236,16 @@ const servicesOptions = {
 const servicesObserver = new IntersectionObserver(entries => {
     entries.forEach((entry, index) => {
         const animationClass = entry.target.getAttribute('data-animation-type');
-        if(entry.isIntersecting)
+        if(entry.isIntersecting){
             setTimeout(() => {
                 entry.target.classList.add(animationClass);
             }, index * 250);
+            // using unobserve(entry.target) inside check entry.isIntersecting
+            // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
+            servicesObserver.unobserve(entry.target);
+        }
         else
             entry.target.classList.remove(animationClass);
-
-        // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
-        // servicesObserver.unobserve(entry.target);
     })
 },servicesOptions);
 
@@ -272,15 +272,15 @@ const portObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const animationClass = entry.target.getAttribute('data-animation-type');
         if(animationClass){
-            if(entry.isIntersecting)
+            if(entry.isIntersecting){
                 entry.target.classList.add(animationClass);
+                // using unobserve(entry.target) inside check entry.isIntersecting
+                // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
+                portObserver.unobserve(entry.target);
+            }
             else
                 entry.target.classList.remove(animationClass);
         }
-        // if use unobserve method its supported performance but not used for served functionality 
-        // Which add animation to section when it observed and removed when does not it also...
-        // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
-        // portObserver.unobserve(entry.target);
     })
 },portOptions);
 
@@ -432,14 +432,15 @@ const mainObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         const animationClass = entry.target.getAttribute('data-animation-type');
         if(animationClass){
-            if(entry.isIntersecting)
+            if(entry.isIntersecting) {
                 entry.target.classList.add(animationClass);
+                // using unobserve(entry.target) inside check entry.isIntersecting
+                // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
+                mainObserver.unobserve(entry.target);
+            }
             else
                 entry.target.classList.remove(animationClass);
         }
-        // if use unobserve method its supported performance but not used for served functionality 
-        // Which add animation to section when it observed and removed when does not it also...
-        // mainObserver.unobserve(entry.target);
     })
 },observerOptions);
 
