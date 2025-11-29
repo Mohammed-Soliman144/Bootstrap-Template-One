@@ -109,7 +109,7 @@ const animatedElements = about.querySelectorAll('main section.about .animated-on
 // console.log(animatedElements);
 
 const aboutOptions = {
-    rootMargin:'0px 0px -50px 0px',
+    rootMargin:'0px 0px -120px 0px',
     threshold: 0.10
 };
 
