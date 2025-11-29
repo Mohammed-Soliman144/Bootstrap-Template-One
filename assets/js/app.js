@@ -510,9 +510,13 @@ connectionResult();
 
 
 // passing asyncrohonising function to window event online in this case connectionResult as true Networks Works online (Done)
+// pass checkconnection function by reference to bowser calls later
 window.addEventListener('online', checkConnection);
 //  passing asyncrohonising function to window event offline in this case connectionResult as false Networks Not Works offline (Not Done)
-window.addEventListener('offline', checkConnection);
+// pass checkconnection function by refence but here will accept parameter false which user is not able to download image and .catch(error) will return error
+window.addEventListener('offline', () => {
+    checkConnection(false);
+});
 
 // C- Validation Form
 const form = secContact.querySelector('div form.right');
