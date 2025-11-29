@@ -109,8 +109,8 @@ const animatedElements = about.querySelectorAll('main section.about .animated-on
 // console.log(animatedElements);
 
 const aboutOptions = {
-    rootMargin: '0px 0px -60px 0px',
-    threshold: 0.20
+    rootMargin:'0px 0px -50px 0px',
+    threshold: 0.10
 };
 
 /*      animated-on-scroll
@@ -152,6 +152,8 @@ const aboutObserver = new IntersectionObserver(entries => {
             targetElement.classList.remove(animationClass);
         }
 
+        // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
+        // aboutObserver.unobserve(entry.target);
     })
 },aboutOptions);
 
@@ -228,7 +230,7 @@ function stopProgressing(element) {
 const services = document.getElementById('services');
 // console.log(services);
 const servicesOptions = {
-    rootMargin: '0px 0px -60px 0px',
+    rootMargin: '0px 0px -120px 0px',
     threshold: 0.25
 };
 
@@ -242,6 +244,7 @@ const servicesObserver = new IntersectionObserver(entries => {
         else
             entry.target.classList.remove(animationClass);
 
+        // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
         // servicesObserver.unobserve(entry.target);
     })
 },servicesOptions);
@@ -262,8 +265,8 @@ const allLinks = portfolio.querySelectorAll('ul li');
 
 // mainObserver For All Sectio
 const portOptions = {
-    rootMargin: '0px 0px -250px 0px',
-    threshold: 0.20
+    rootMargin: '0px 0px -120px 0px',
+    threshold: 0.25
 };
 const portObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -276,7 +279,8 @@ const portObserver = new IntersectionObserver(entries => {
         }
         // if use unobserve method its supported performance but not used for served functionality 
         // Which add animation to section when it observed and removed when does not it also...
-        // mainObserver.unobserve(entry);
+        // Using Unobserve(entry.target) to make animation plays only once for more performance and treat flashing
+        // portObserver.unobserve(entry.target);
     })
 },portOptions);
 
@@ -435,7 +439,7 @@ const mainObserver = new IntersectionObserver(entries => {
         }
         // if use unobserve method its supported performance but not used for served functionality 
         // Which add animation to section when it observed and removed when does not it also...
-        // mainObserver.unobserve(entry);
+        // mainObserver.unobserve(entry.target);
     })
 },observerOptions);
 

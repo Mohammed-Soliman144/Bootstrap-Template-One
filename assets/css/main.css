@@ -10,6 +10,13 @@ body {
 }
 
 /* F- Standard Media Queries */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s;
+    animation-delay: 0s;
+    transition-duration: 0s;
+  }
+}
 /* ================== All Above steps its done by using bootstrap.css ============================ */
 
 
@@ -82,6 +89,9 @@ header.main-header nav  ul.header-main-ul li a:hover::after {
 /* Home Section */
 main section.home .home-img {
     min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    content-visibility: auto;
 }
 main section.home article.customize-fade h1 {
     transform-origin: left;
@@ -160,7 +170,7 @@ main section.about section.container div.row article.fade-in-article:nth-child(3
 
 main section.about .animated-on-scroll.fade-up[data-animation-type='fade-up']{
   transform-origin: bottom;
-  animation: fade-up 0.9s ease-in-out forwards;
+  animation: fade-up 0.9s ease-in-out;
   will-change: transform, opacity;
 }
 
@@ -204,7 +214,7 @@ main section.section-bgc-white .myprogress-90 {
 
 
 main section.about.section-bgc .container + section + section article {
-    animation: fade-up 0.9s ease-in-out forwards;
+    animation: fade-up 0.9s ease-in-out;
 }
 /* About Section */
 
